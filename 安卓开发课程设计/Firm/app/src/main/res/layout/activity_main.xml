@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+<!--  初始界面  -->
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="179dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:rotationX="27"
+        android:text="@string/app_name_cn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#00668B"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--中考-->
+    <Button
+        android:id="@+id/button_primary"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#219BCC"
+        android:gravity="center"
+        android:text="中考"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
+    <!--高考-->
+    <Button
+        android:id="@+id/button_high"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#219BCC"
+        android:gravity="center"
+        android:text="高考"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_primary"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
+    <!--四级-->
+    <Button
+        android:id="@+id/button_CET4"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#219BCC"
+        android:gravity="center"
+        android:text="四级"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_primary" />
+
+    <!--六级-->
+    <Button
+        android:id="@+id/button_CET6"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#219BCC"
+        android:gravity="center"
+        android:text="六级"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_high" />
+
+    <!--考研-->
+    <Button
+        android:id="@+id/button_postgraduate"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#219BCC"
+        android:gravity="center"
+        android:text="考研"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_CET4" />
+
+    <!--出国-->
+    <Button
+        android:id="@+id/button_abroad"
+        android:layout_width="119dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#219BCC"
+        android:gravity="center"
+        android:text="出国"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_CET6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

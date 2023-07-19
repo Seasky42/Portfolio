@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!--  显示正确界面  -->
+
+    <!--单词-->
+    <TextView
+        android:id="@+id/Sword"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="92dp"
+        android:text="word"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--词性，释义-->
+    <TextView
+        android:id="@+id/Sproperty"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="property"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sword" />
+
+    <!--例句-->
+    <TextView
+        android:id="@+id/Sexample"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="example"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sword" />
+
+    <!--图片-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/picture"-->
+    <!--        android:layout_width="205dp"-->
+    <!--        android:layout_height="173dp"-->
+    <!--        android:layout_marginTop="52dp"-->
+    <!--        android:contentDescription="@string/help"-->
+    <!--        android:src="@drawable/memory"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/example"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <Button
+        android:id="@+id/showDown"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#2196F3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="确  定"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sexample" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

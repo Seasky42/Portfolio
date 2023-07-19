@@ -1,0 +1,2 @@
+1.打开BreakBricks.exe
+2.WASD控制发射位置，点击鼠标左键发射
