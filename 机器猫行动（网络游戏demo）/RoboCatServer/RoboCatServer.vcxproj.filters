@@ -65,5 +65,9 @@
     <ClInclude Include="Inc\YarnServer.h">
       <Filter>Inc</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RoboCatServer.rc" />
   </ItemGroup>
 </Project>
